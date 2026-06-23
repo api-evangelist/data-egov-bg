@@ -1,0 +1,25 @@
+name: data.egov.bg
+description: data.egov.bg REST API surface verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-egov-bg/refs/heads/main/review.yml
+created: '2026-06-23'
+modified: '2026-06-23'
+reviews:
+  - date: '2026-06-23'
+    rating: 3
+    summary: >-
+      data.egov.bg is Bulgaria's national open-data portal, run by the Ministry of e-Government. It is
+      a custom Laravel application with action-named REST endpoints under /api (mostly POST with JSON
+      bodies) — not CKAN. Public read endpoints require no key; write/admin endpoints require an api_key.
+      The live site returned HTTP 403 (WAF / datacenter-IP block) to every request from this environment,
+      so the API surface was verified from the official source repository (governmentbg/data-gov-bg,
+      routes/api.php) rather than a live probe. Dataset count could not be verified.
+    endpoints:
+      - url: https://data.egov.bg/api/listDatasets
+        status: blocked
+        note: Public dataset listing (POST); verified from source repo; WAF-blocked live (403).
+      - url: https://data.egov.bg/document
+        status: blocked
+        note: API documentation page; WAF-blocked (403) from this environment.
+      - url: https://data.egov.bg/
+        status: blocked
+        note: Portal home; WAF-blocked (403) from datacenter IPs.

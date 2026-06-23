@@ -1,0 +1,57 @@
+aid: data-egov-bg
+name: data.egov.bg (Open Data Portal of Bulgaria)
+description: >-
+  data.egov.bg is the national government open-data portal for Bulgaria, operated by the Ministry of
+  e-Government (Министерство на електронното управление). It is a custom Laravel application exposing a
+  REST API with action-style endpoints (predominantly POST with JSON bodies) under the /api prefix. It
+  is not CKAN. Public read endpoints require no key; write/admin endpoints require an api_key obtained
+  via a free account.
+kind: government
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-egov-bg/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - Custom Platform
+  - REST
+  - Government Data
+  - National Government
+  - Bulgaria
+  - Europe
+created: '2026-06-23'
+modified: '2026-06-23'
+specificationVersion: '0.19'
+apis:
+  - aid: data-egov-bg:rest
+    name: data.egov.bg REST API
+    description: >-
+      Custom Laravel REST API for data.egov.bg with action-named endpoints under /api, almost all POST
+      with JSON bodies. Public read methods include listDatasets, getDatasetDetails, listResources,
+      getResourceData, getResourceMetadata, getResourceSchema, searchResourceData, listOrganisations,
+      getOrganisationDetails, listMainCategories, and listTags. getLinkedData also accepts GET.
+      Write/admin methods (addDataset, editDataset, generateAPIKey, etc.) require an api_key.
+    humanURL: https://data.egov.bg/
+    baseURL: https://data.egov.bg/api
+    tags:
+      - REST
+      - Open Data
+      - Catalog
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://data.egov.bg/document
+      - type: Website
+        url: https://data.egov.bg/
+      - type: x-api-endpoint
+        url: https://data.egov.bg/api/listDatasets
+      - type: x-source-code
+        url: https://github.com/governmentbg/data-gov-bg
+common:
+  - type: Website
+    url: https://data.egov.bg/
+  - type: Documentation
+    url: https://data.egov.bg/document
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
