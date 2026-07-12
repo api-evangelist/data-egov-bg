@@ -46,6 +46,8 @@ apis:
       - type: x-source-code
         url: https://github.com/governmentbg/data-gov-bg
 common:
+  - type: DomainSecurity
+    url: security/data-egov-bg-domain-security.yml
   - type: Website
     url: https://data.egov.bg/
   - type: Documentation
