@@ -7,7 +7,18 @@ description: >-
   is not CKAN. Public read endpoints require no key; write/admin endpoints require an api_key obtained
   via a free account.
 kind: government
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/data-egov-bg.png
 url: https://raw.githubusercontent.com/api-evangelist/data-egov-bg/refs/heads/main/apis.yml
 tags:
   - Open Data
