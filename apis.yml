@@ -7,6 +7,17 @@ description: >-
   is not CKAN. Public read endpoints require no key; write/admin endpoints require an api_key obtained
   via a free account.
 kind: government
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
