@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "data-egov-bg",
+    "captured_at": "2026-10-11T184701",
+    "source_url": "https://egov.bg",
+    "source_type": "root-domain",
+    "file": "data-egov-bg-2026-10-11T184701.png",
+    "bytes": 208254,
+    "capture": "playwright-local"
+  }
+]
