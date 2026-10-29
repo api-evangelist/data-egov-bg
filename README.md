@@ -1,4 +1,4 @@
-# data.egov.bg (data-egov-bg)
+# data.egov.bg (Open Data Portal of Bulgaria)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,24 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-data.egov.bg is Bulgaria's national government open-data portal, operated by the Ministry of e-Government. It is a **custom Laravel REST API** (action-style endpoints, mostly POST) — **not** CKAN.
+data.egov.bg is the national government open-data portal for Bulgaria, operated by the Ministry of e-Government (Министерство на електронното управление). It is a custom Laravel application exposing a REST API with action-style endpoints (predominantly POST with JSON bodies) under the /api prefix. It is not CKAN. Public read endpoints require no key; write/admin endpoints require an api_key obtained via a free account.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/data-egov-bg/refs/heads/main/apis.yml)
+**Areas:** Open Data · Custom Platform · REST · Government Data · National Government · Bulgaria · Europe
 
-## Type
-- **kind:** government  ·  **software:** custom (Laravel)
+## data.egov.bg (Open Data Portal of Bulgaria) on APIs.io
 
-## API
-- **data.egov.bg REST API** — base `https://data.egov.bg/api`. [Docs](https://data.egov.bg/document) · [Portal](https://data.egov.bg/)
-- Public read methods (no key): `listDatasets`, `getDatasetDetails`, `listResources`, `getResourceData`, `listOrganisations`, `listMainCategories`, `listTags`. Write/admin methods need an `api_key` (free account).
-- Source code: [governmentbg/data-gov-bg](https://github.com/governmentbg/data-gov-bg)
-- **Note:** the live site blocks datacenter IPs via a WAF (HTTP 403). The endpoint surface above is verified from the official source repo, not a live probe; dataset count unverified.
+Everything profiled for data.egov.bg (Open Data Portal of Bulgaria) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/data-egov-bg/](https://apis.io/providers/data-egov-bg/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
-- **Created:** 2026-06-23
-- **Modified:** 2026-06-23
+### APIs (1)
 
-## Maintainers
-**FN:** Kin Lane
+- [data.egov.bg REST API](https://apis.io/apis/data-egov-bg/rest/) — Custom Laravel REST API for data.egov.bg with action-named endpoints under /api, almost all POST with JSON bodies. Public read methods include listDatasets,…
 
-**Email:** kin@apievangelist.com
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Data Egov Bg Domain Security](https://apis.io/security/data-egov-bg/data-egov-bg-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://data.egov.bg/)
+- [Documentation](https://data.egov.bg/document)
+
+## API Evangelist rating
+
+**Kin Score 7.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/data-egov-bg/](https://apis.io/providers/data-egov-bg/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for data.egov.bg (Open Data Portal of Bulgaria): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/data-egov-bg/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
